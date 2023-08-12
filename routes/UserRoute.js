@@ -11,7 +11,7 @@ mongoose = require('mongoose')
 
 
 
-const UserDATA = require('../model/users')
+const UserDATA = require('../Model/users')
 //login api
 router.get('/userlist/',async(req,res)=>{
     let data = await UserDATA.find()
