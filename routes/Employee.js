@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const jwt =require("jsonwebtoken");
-const employeeDATA = require('../model/employee')
+const employeeDATA = require('../Model/employee')
 router.get('/employeelist',async(req,res)=>{
     try {
         let data = await employeeDATA.find()
